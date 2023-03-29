@@ -1,0 +1,90 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+body{
+    background-color: #0F0F0F;
+    margin-bottom: 2000px;
+}
+header{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+header i{
+    font-size: 22px;
+    
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+header h3{
+    font-size: 24px;
+    color: red;
+    margin-left: 24px;
+}
+header button{
+    cursor: pointer;
+    border: none;
+    
+}
+.header-left button:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #272727;
+}
+
+.header-center{
+    display: flex;
+    align-items: center;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border: 1px solid #717171;
+    border-radius: 30px;
+    margin-right: 24px;
+}
+.header-search input{
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    width: 250px;
+    height: 25px;
+}
+.header-search .bi-search{
+    font-size: 18px;
+    padding-right: 5px;
+}
+.header-center .mic{
+    width: 40px;
+    height: 40px;
+    background-color: #282828;
+    border-radius: 30px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right button{
+    margin-right: 24px;
+}
+.header-right button:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #272727;
+}
+.header-right img{
+    border-radius: 30px;
+}
