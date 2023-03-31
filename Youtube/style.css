@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
     background-color: transparent;
 }
+
 body{
     background-color: #0F0F0F;
+    font-family: 'Poppins', sans-serif;
 }
+:root {
+    color-scheme: dark;
+    }
 header{
     background-color: #0F0F0F;
     border-bottom: 1px solid #717171;
     position: sticky;
     top: 0;
+    z-index: 1;
+    width: 1475px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -90,8 +98,12 @@ header button{
     border-radius: 30px;
 }
 
+.content{
+    display: flex;
+}
+
 .sidebar{
-    height: 120vh;
+    height: 170vh;
     width: 100px;
     border-right: 1px solid #717171;
     
@@ -127,4 +139,121 @@ header button{
 }
 .sidebar em{
     color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.profile-back{
+    position: relative;
+}
+.profile-back span{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: #282828;
+}
+.profile-back button{
+    font-size: 16px;
+}
+.profile-text{
+    display: flex;
+    justify-content: space-around;
+}
+.profile-text img{
+    border-radius: 30px;
+    margin-right: 25px;
+}
+.profile-text-left{
+    display: flex;
+    flex-direction: row;
+}
+.profile-text-right{
+    display: flex;
+    align-items: center;
+}
+.profile-text-right button{
+    font-size: 18px;
+    border-color: #40A6FD;
+    border-radius: 20px;
+    margin-right: 15px;
+    background-color: #40A6FD;
+    color: #0F0F0F;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.profile-text-right .btn-join{
+    background-color: #282828;
+    color: white;
+    border-color: #282828;
+}
+.profile-text-left p{
+    font-size: 12px;
+    color: #909090;
+}
+.profile-tabs{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #717171;
+}
+.profile-tabs .tab{
+    margin: 20px 90px;
+    margin-bottom: 10px;
+}
+.profile-tabs button{
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #959595;
+    transition: .5s ease color;
+}
+.profile-tabs button:hover{
+    color: white;
+
+}
+
+.videos{
+    margin: 20px;
+    flex: 1;
+}
+.video-list{
+    color: white;
+    list-style: none;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 25px;
+    
+}
+.video-image{
+    position: relative;
+}
+.video-image span{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: #282828;
+    padding: 0 4px;
+    opacity: .8;
+    font-size: 14px;
+}
+.video-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.video-text a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold
+}
+.video-text span{
+    font-size: 12px;
 }
